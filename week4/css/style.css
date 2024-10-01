@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid brown;
+}
+
+header .logo {
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header a {
+    color: brown;
+    font-weight: 500;
+}
+
+main {
+    padding: 0 20px;
+}
+
+main .banner {
+    padding: 50px 0;
+    border-bottom: 1px solid brown;
+    color: blueviolet;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+main .banner .hero-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 475px;
+}
+
+.hero-texts h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    padding: 10px 15px;
+    border: 1px solid blueviolet;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+}
+
+button:hover {
+    color: blueviolet;
+    background-color: transparent;
+}
+
+
+.hero-texts button {
+    align-self: flex-start;
+}
+main .banner .hero-img {
+    max-width: 600px;
+    overflow: hidden;
+    flex-grow: 0;
+}
+
+main .banner .hero-img img {
+    width: 100%;
+}
+
+main .info, main .devs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0 ;
+}
+.info h2, .devs h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row .card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px brown;
+    border: 1px solid brown;
+    align-items: center;
+    width: 300px;
+    flex-grow: 1;
+}
+
+.row .card .desc {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.info .card {
+    box-shadow: none;
+}
+
+form {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+legend {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+   margin-bottom: 16px;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    color: gray;
+    font-weight: 400;
+}
+label input, select {
+    display: block;
+    padding: 10px;
+    border: 0.5px solid blueviolet;
+    background-color: #fff;
+    border-radius: 8px;
+    color: black;
+}
+
+input, select {
+    outline-color: blueviolet;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form div label {
+    flex-direction: row;
+}
+
+footer {
+    padding: 12px 20px;
+    border-top: 1px solid brown;
+}
+
+
+       
+.odd {
+    background-color: #45a049;
+ }  
+
+ .hero-img1 {
+    width: 100px;
+    height: auto;
+ }    
+       
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+/* form {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 600px;
+    margin: 0 auto;
+} */
+form legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.me {
+    display: flex;
+    justify-content: center;
+    border: 100px;
+    
+}
+.find {
+    border: 1px solid #ddd;
+}

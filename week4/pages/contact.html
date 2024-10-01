@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo">K-SD</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog">Blog</a></li>
+            </ul>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>
+                      Contact K-SD
+                    </legend>
+                    <label>
+                        First name
+                        <input type="text" name="first name" placeholder="Firs name"  required>
+                    </label>
+                    <label>
+                        Last name
+                        <input type="text" name="last name" placeholder="last name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                    </label>
+                    <label>
+                        Phone number
+                        <input type="tel" name="phone number" placeholder="+234..." required>
+                    </label>
+                    
+                    <div>
+                        <label>
+                            <input type="radio" name="gender" checked>
+                            Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender">
+                            Female
+                        </label>
+                    </div>
+                    
+                    <select required>
+                        <option value="" selected disabled>Choose your track</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend </option>
+                        <option value="blockchain">Blockchain Dev</option>
+                    </select>
+                    
+                    <button>Submit</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>Footer</footer>
+        
+    </div>
+</body>
+</html>
