@@ -1,0 +1,191 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --light-bg: #f9f9f9;
+  --light-text: #333;
+  --light-accent: #6200ee;
+  --dark-bg: #121212;
+  --dark-text: #e4e4e4;
+  --dark-accent: #bb86fc;
+
+  --radius: 10px;
+}
+
+/* Light and Dark Themes */
+body.light {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--light-bg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar.dark {
+  background-color: var(--dark-bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a.active {
+  color: var(--light-accent);
+}
+
+.nav-links a:hover {
+  color: var(--light-accent);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  background-color: var(--light-accent);
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, var(--light-accent), #03dac5);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* GitHub Profile Section */
+.github-profile {
+  padding: 2rem;
+}
+
+.github-profile input {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto 2rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.github-profile input:focus {
+  border-color: var(--light-accent);
+  outline: none;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.user-card {
+  text-align: center;
+  background-color: var(--light-bg);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.user-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.user-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-card a {
+  color: var(--light-accent);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.user-card a:hover {
+  color: #3700b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--light-bg);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer.dark {
+  background-color: var(--dark-bg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--dark-text);
+}
